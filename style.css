@@ -1,0 +1,42 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: monospace;
+    background-image:url("formbg.jpg");
+    
+}
+.main{
+    position: absolute;
+    bottom:20%;
+    left:22%;
+    tranform:translate(-60%,-60%);
+    width: 800px;
+    height: 400px;
+    background-color:white;
+    border-radius:5px;
+}
+ .form{
+     padding: 0 50px;
+     box-sizing: border-box;
+    }
+
+.common{
+    width: 300px;
+    transition: all 0.6s ease;
+}
+ .buttons input{
+   height: 25%;
+   width: 25%;
+   font-size: 16px;
+   letter-spacing: 0.5px;
+   padding: auto;
+   background-color: lightskyblue;
+   border-radius: 2px;
+   margin: 22px 10px;
+}
+.buttons input:hover{
+ background-color: aliceblue;
+}
+.error{
+    color: red;
+}

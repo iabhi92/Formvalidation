@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+    
+</head>        
+            
+
+<body>
+    <div class="main">
+       
+        <form class="form" name="form" id="form" onsumbit="return ValidateTheform()">
+        <h4>Select your source: Google Cloud Storage</h4>
+           <div class="pipe_name" id="pipe_name">
+               <label for="pipeline_name" class="label_pipeline">Provide a name for pipeline:</label>
+               <input type="text" class="pipeline common" name="Pipeline"  id="pipeline_name" placeholder="e.g.,cust_shop_energy_gateway001" onkeyup="validateName()">
+               <span id="NAME_error"></span>
+         </div>
+           <br>
+          <div class="proj_name">
+              <label for="project_gcs" id="label_project">GCS project name</label>
+              <input type="text" class="common"name="GCSname" id="project_gcs" placeholder="project-id">
+              <span id="PROJ_error"></span>
+          </div>
+           <br>
+           <div class="buck_name">
+               <label for="bucket_gcs" class="label_project">GCS bucket name:</label>
+               <input type="url"class="common" name="GCSbucket" id="bucket_gcs" placeholder="gs://your-bucket">
+               <span id="BUCK_error"></span>
+           </div>
+             <br>
+             <div class="inpt_storage">
+                 <label for="storage_input" class="label_storage">Input Cloud Storage File(s):</label>
+                 <input type="url" class="common" name="Cloud" id="storage_input" placeholder="GCS location of your files"><br>
+                 <span id="STORAGE_error"></span>
+                
+             </div>
+               <br>
+               <div class="cred_ential">
+                   <label for="credential_gcs" class="label_credential">GCS credentials:</label>
+                  <input type="password" class="common" name="Passw" id="credential_gcs">
+                  <span id="CRED_error"></span>
+               </div>
+               <br>
+               <div class="run_every">
+                   <label for="every_run" class="label_run">Run every:</label>
+                   <input type="text" class="common" name="time" id="every_run" placeholder="(in minutes)">
+                   <span id="RUN_error"></span>
+               </div>
+               <br>
+               <div class="buttons">
+                   <input type="submit" name="submitButton" value="Create">
+                   <input type="reset" name="reset" value="Cancel">
+            
+
+               </div>
+
+                
+
+       </form> 
+    </div>
+    
+
+
+<script src="index.js"></script>
+</body>
+
+  
+ 
+
+</html>
